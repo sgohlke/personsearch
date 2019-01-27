@@ -1,3 +1,5 @@
+const API_URL='http://192.168.99.100:3000'; 
+
 function start() {
 		let currentURI = window.location.hash;
 		changeText();
@@ -70,7 +72,7 @@ function searchDocuments(text) {
   document.getElementById('searchResults').classList.add("hidden");
   document.getElementById('searchResultsLoadMessage').classList.remove("hidden");
 
-  return fetch(`http://192.168.99.100:3000/person/search/${text}`, { headers: {
+  return fetch(API_URL +  `/person/search/${text}`, { headers: {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -111,7 +113,7 @@ function searchDocuments(text) {
 function searchFruits(text) {
   document.getElementById('fruitsList').classList.add("hidden");
   document.getElementById('fruitsLoadMessage').classList.remove("hidden");
-  return fetch(`http://192.168.99.100:3000/person/fruit/${text}`, { headers: {
+  return fetch(API_URL + `/person/fruit/${text}`, { headers: {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7',
