@@ -1,0 +1,116 @@
+/* Allgemeine Styles */
+body, textarea, input, select {
+	font-family: Arial, Verdana, FreeSans, sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Header und Navigation*/
+header {
+	display: flex;
+	flex-direction: row;
+	color: #000066;
+	background-color: #f7f7f7;
+}
+
+nav {
+	align-self: center;
+	margin: 0 0.8em 0 0;
+}
+
+header ul li {
+ display: inline-block;
+ padding: 0 1.4em 0 0;
+ font-size: 0.9em;
+}
+
+header ul li a {
+ text-decoration: none;
+}
+
+nav a:hover {
+	background-color: yellow;
+}
+
+nav a{
+	font-size: 1.2rem;
+}
+
+#personsLabel {
+	display: block;
+	background-color: #0275d8;
+	font-size: 1.2rem;
+	color: white;
+	border-radius: 7px;
+	width: 130px;
+	padding-left: 10px;
+}
+
+/* Content Area*/
+
+#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 40px;
+}
+
+/* Search form and results*/
+
+#searchform {
+	flex-basis: 100%
+}
+
+#additionalInfo {
+	width: 22%;
+}
+
+#trefferliste {
+	flex-grow: 9;
+	max-width: 60%;
+}
+
+#searchResults article h5  {
+	font-size: 1.2em;
+	margin:0;
+}
+
+.searchlabel, .searchinput {
+	font-size: 1.1em;
+}
+
+.searchlabel {
+	display:inline-block;
+	width: 13rem;
+}
+
+.searchinput {
+	width: 50%;
+}
+
+.searchResultEntry {
+	padding-bottom: 1rem;
+}
+
+.quelle {
+	color: #306E30;
+}
+
+/* dossiers */
+
+.addInfoUL {
+	padding: 0;
+	list-style-type: none;
+}
+
+.addInfoName {
+	display: inline-block;
+	width: 12rem;
+	word-wrap: break-word;
+}
+
+.addInfoCount {
+	color: #6699ff;
+}
